@@ -1,0 +1,10 @@
+.skill {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  width: 0;
+}

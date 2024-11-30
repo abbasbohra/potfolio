@@ -1,0 +1,150 @@
+/* About Section Styles */
+#about {
+  padding: 4rem 2rem;
+  background: linear-gradient(
+    135deg,
+    #89a8b2,
+    #b3c8cf,
+    #e5e1da,
+    #f1f0e8
+  ); /* Apply gradient */
+  color: #333; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 80vh; /* Adjust height */
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row; /* Place items side by side */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  margin: auto;
+}
+
+.about-content {
+  flex: 1; /* Takes 50% of space */
+  text-align: left; /* Align text to the left */
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.animated-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.highlight {
+  color: #ff7e5f;
+  animation: pulse 2s infinite;
+}
+
+.animated-role {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+.about-image {
+  flex: 1; /* Takes 50% of space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInFromRight 1.5s ease-in-out;
+}
+
+.about-image img {
+  max-width: 90%; /* Slight padding */
+  height: auto;
+  border-radius: 10px;
+  animation: bounceIn 1.5s ease-in-out;
+  margin-left: 50px;
+}
+.about-image img {
+  width: 200px; /* Adjust size as needed */
+  margin-right: 20px; /* Add margin-right */
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.about-image {
+  margin-right: 20px; /* Add space between image and text */
+}
+/* Keyframes for Animations */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Background Enlarged */
+#about::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200%;
+  height: 150%;
+  /* background: url("/images/background-pattern.svg") no-repeat center; */
+  background-size: cover; /* Scale background */
+  opacity: 0.1;
+  z-index: -1;
+}
+#about::before {
+  width: 200%;
+  height: 150%;
+}
+
+@media (max-width: 768px) {
+  #about {
+    height: auto; /* Auto height for better mobile responsiveness */
+    padding: 3rem 1rem;
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #89a8b2,
+    #b3c8cf,
+    #e5e1da,
+    #f1f0e8
+  ); /* Gradient colors */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333; /* Optional: Adjust text color for contrast */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+}
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
