@@ -13,6 +13,9 @@ const Header = () => (
         <a href="#portfolio" className="nav-link">
           Portfolio
         </a>
+        <a href="#resume" className="nav-link">
+          Resume
+        </a>
         <a href="#contact" className="nav-link">
           Contact
         </a>

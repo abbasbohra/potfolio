@@ -1,24 +1,27 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { ReactComponent as CartIcon } from "../images/cart-shopping-solid.svg";
+import { ReactComponent as BuildingIcon } from "../images/building-regular.svg";
+import { ReactComponent as ProjectIcon } from "../images/cart-shopping-solid.svg";
 import "./Protfolio.css";
 
 const projects = [
   {
     title: "E-Commerce App",
     description: "A cross-platform app built with React Native.",
-    image: require("../images/mobile.svg"), // Example SVG
+    image: CartIcon, // Imported as React Component
     link: "https://github.com/your-repo",
   },
   {
     title: "Hotel Booking Platform",
     description: "A modern web application for hotel reservations.",
-    image: "/images/project2.svg", // Example SVG
+    image: BuildingIcon, // Imported as React Component
     link: "https://github.com/your-repo",
   },
   {
     title: "Jain Supplier",
     description: "A personal portfolio showcasing my skills and projects.",
-    image: "/images/project3.svg", // Example SVG
+    image: ProjectIcon, // Imported as React Component
     link: "https://your-website.com",
   },
 ];
@@ -30,21 +33,18 @@ const Portfolio = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
+            <project.image className="project-image" />
+            {/* Use as a React Component */}
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
-            <a
+            {/* <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               View Project <FaExternalLinkAlt />
-            </a>
+            </a> */}
           </div>
         ))}
       </div>

@@ -4,21 +4,20 @@ import About from "./components/About";
 import Portfolio from "./components/Protfolio";
 import Contact from "./components/contact";
 import "./index.css";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => setDarkMode(!darkMode);
-
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
+    <div>
       <Header />
-      <button onClick={toggleDarkMode} className="dark-mode-toggle">
-        {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
       <About />
       <Portfolio />
+      <Resume />
       <Contact />
+      <Footer />
     </div>
   );
 }

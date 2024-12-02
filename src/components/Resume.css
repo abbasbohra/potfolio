@@ -1,0 +1,67 @@
+/* Add the gradient background to the resume container */
+.resume-container {
+  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.381);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left column */
+.left-column {
+  flex: 0.5;
+  background-color: rgba(255, 255, 255, 0.448);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column */
+.right-column {
+  flex: 2;
+  background-color: rgba(255, 255, 255, 0.244);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title */
+.section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* General list styles */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.experience h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.experience p {
+  margin: 5px 0;
+}

@@ -1,3 +1,4 @@
+// src/components/About.js
 import React from "react";
 import { ReactComponent as DeveloperIcon } from "../../src/images/undraw_undraw_analytics_mobile_drjl_-1-_5133.svg";
 import "./About.css";

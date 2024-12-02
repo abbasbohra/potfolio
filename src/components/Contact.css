@@ -1,0 +1,97 @@
+/* src/components/Contact.css */
+.contact-page {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px;
+  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; */
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: start; /* Align title to the right */
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center; /* Optional: Align text in the center */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-icon {
+  color: #3498db;
+  font-size: 1.5rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #2c3e50;
+}
+
+.contact-image {
+  flex: 1.5;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-svg {
+  width: 200%;
+  max-width: 400px; /* Adjusted size for better fitting */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animation for the SVG */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
