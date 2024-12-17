@@ -88,3 +88,36 @@ section {
 .dark-mode-toggle:hover {
   background-color: #555;
 }
+/* Global Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents overflow due to padding or borders */
+}
+
+/* Prevent Horizontal Scroll */
+html,
+body {
+  overflow-x: hidden; /* Remove horizontal scroll */
+  width: 100%; /* Ensure full width without overflow */
+}
+
+/* Images and Other Media */
+img,
+video {
+  max-width: 100%; /* Scale images properly */
+  height: auto;
+}
+
+/* Sections or Containers */
+section,
+div {
+  max-width: 100%; /* Prevent oversized containers */
+}
+
+/* Optional: Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
