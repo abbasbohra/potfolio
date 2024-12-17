@@ -26,7 +26,7 @@ const Resume = () => {
           <div className="section">
             <h2>Education</h2>
             <p>2021 - 2024</p>
-            <p>MSlU Udaipur</p>
+            <p>MLSU Udaipur</p>
             <p>Bachelor of Commerce</p>
           </div>
 
