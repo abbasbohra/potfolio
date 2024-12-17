@@ -1,19 +1,22 @@
 import React from "react";
-import { motion } from "framer-motion";
-import "./Skill.css"; // Import the new CSS file
+import Skill from "./Skill";
 
-const Skill = ({ skillName, progress }) => {
+const SkillList = () => {
+  const skills = [
+    { name: "React Native", progress: 90 },
+    { name: "Redux", progress: 85 },
+    { name: "JavaScript", progress: 80 },
+    { name: "Firebase", progress: 70 },
+  ];
+
   return (
-    <div className="skill">
-      <h4>{skillName}</h4>
-      <motion.div
-        className="progress-bar"
-        initial={{ width: 0 }}
-        animate={{ width: `${progress}%` }}
-        transition={{ duration: 1 }}
-      />
+    <div>
+      <h2>My Skills</h2>
+      {skills.map((skill, index) => (
+        <Skill key={index} skillName={skill.name} progress={skill.progress} />
+      ))}
     </div>
   );
 };
 
-export default Skill;
+export default SkillList;

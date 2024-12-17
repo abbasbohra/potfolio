@@ -1,7 +1,7 @@
 // src/components/Contact.js
 import React from "react";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope } from "react-icons/fa";
-import { ReactComponent as ContactIcon } from "../../src/images/undraw_personal_email_re_4lx7.svg"; // Adjust the path as needed
+import { ReactComponent as ContactIcon } from "../../src/images/undraw_personal_email_re_4lx7.svg";
 import "./Contact.css";
 
 const Contact = () => (

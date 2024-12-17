@@ -9,19 +9,19 @@ const projects = [
   {
     title: "E-Commerce App",
     description: "A cross-platform app built with React Native.",
-    image: CartIcon, // Imported as React Component
+    image: CartIcon,
     link: "https://github.com/your-repo",
   },
   {
     title: "Hotel Booking Platform",
     description: "A modern web application for hotel reservations.",
-    image: BuildingIcon, // Imported as React Component
+    image: BuildingIcon,
     link: "https://github.com/your-repo",
   },
   {
     title: "Jain Supplier",
-    description: "A personal portfolio showcasing my skills and projects.",
-    image: ProjectIcon, // Imported as React Component
+    description: "A portfolio showcasing my skills and projects.",
+    image: ProjectIcon,
     link: "https://your-website.com",
   },
 ];
@@ -33,18 +33,18 @@ const Portfolio = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
+            {/* Render SVG Component */}
             <project.image className="project-image" />
-            {/* Use as a React Component */}
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
-            {/* <a
+            <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               View Project <FaExternalLinkAlt />
-            </a> */}
+            </a>
           </div>
         ))}
       </div>

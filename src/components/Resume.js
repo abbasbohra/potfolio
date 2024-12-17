@@ -60,13 +60,13 @@ const Resume = () => {
           <div className="section">
             <h2>Profile Summary</h2>
             <p>
-              A highly skilled and experienced React Native Developer.
-              Experience designing and developing mobile applications for iOS
-              and Android platforms. Strong experience in the development of
-              custom mobile applications with advanced features using React
-              Native, Redux, and other relevant technologies. Ability to work
-              independently and collaborate with cross-functional teams to
-              deliver quality products.
+              A highly skilled and experienced React Native Developer with
+              experience designing and developing mobile applications for iOS
+              and Android platforms. Proficient in creating custom mobile
+              applications with advanced features using React Native, Redux, and
+              other relevant technologies. Strong ability to work independently
+              and in collaborative environments to deliver high-quality
+              products.
             </p>
           </div>
 
@@ -83,20 +83,12 @@ const Resume = () => {
                   Native, Redux, and related technologies.
                 </li>
                 <li>
-                  Collaborated with designers and backend teams to deliver
-                  seamless, high-quality user experiences.
-                </li>
-                <li>
                   Integrated RESTful APIs for efficient communication between
                   frontend and backend systems.
                 </li>
                 <li>
-                  Conducted comprehensive testing and debugging to optimize
-                  application performance and ensure reliability.
-                </li>
-                <li>
-                  Documented project workflows and source code to support team
-                  collaboration and maintenance.
+                  Conducted testing and debugging to ensure app performance and
+                  reliability.
                 </li>
               </ul>
             </div>
@@ -110,20 +102,11 @@ const Resume = () => {
                   using React Native.
                 </li>
                 <li>
-                  Supported the integration of RESTful APIs for data retrieval
-                  and seamless app functionality.
+                  Integrated RESTful APIs and resolved performance issues.
                 </li>
                 <li>
-                  Collaborated with senior developers on debugging and resolving
-                  app performance issues.
-                </li>
-                <li>
-                  Gained hands-on experience in state management using Redux and
-                  basic frontend coding.
-                </li>
-                <li>
-                  Created and maintained documentation for the features
-                  developed during the internship.
+                  Gained hands-on experience in Redux and debugging
+                  methodologies.
                 </li>
               </ul>
             </div>

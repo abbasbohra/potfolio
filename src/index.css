@@ -1,17 +1,17 @@
+/* Global Styles */
 body {
-  background: linear-gradient(
-    135deg,
-    #89a8b2,
-    #b3c8cf,
-    #e5e1da,
-    #f1f0e8
-  ); /* Gradient colors */
+  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: #333; /* Optional: Adjust text color for contrast */
+  color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header Styles */
 header {
   background-color: #333;
   color: #fff;
@@ -23,27 +23,53 @@ nav a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #b3c8cf;
+}
+
+/* Section Styles */
 section {
   padding: 2rem;
   text-align: center;
 }
 
+/* Project Section */
 .projects {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .project {
   border: 1px solid #ccc;
   padding: 1rem;
   width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Styles */
 .dark-mode {
   background-color: #121212;
-  color: white;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode nav a {
+  color: #dcdcdc;
 }
 
 .dark-mode-toggle {
@@ -54,33 +80,11 @@ section {
   background-color: #333;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dark-mode-toggle:hover {
   background-color: #555;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.dark-mode-toggle:hover {
-  background-color: #555;
-}
-
-html {
-  scroll-behavior: smooth;
 }

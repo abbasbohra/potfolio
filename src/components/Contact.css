@@ -1,10 +1,11 @@
 /* src/components/Contact.css */
 .contact-page {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 0px;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
   background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
 }
 
@@ -20,8 +21,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* gap: 20px; */
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+.contact-content {
+  flex: 1;
+  text-align: left;
+  max-width: 600px;
 }
 
 .contact-title {
@@ -29,14 +37,13 @@
   font-weight: bold;
   color: #2c3e50;
   margin-bottom: 10px;
-  text-align: start; /* Align title to the right */
 }
 
 .contact-text {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 20px;
-  text-align: center; /* Optional: Align text in the center */
+  line-height: 1.5;
 }
 
 .contact-info {
@@ -70,16 +77,16 @@
 }
 
 .contact-image {
-  flex: 1.5;
+  flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 400px;
 }
 
 .contact-svg {
-  width: 200%;
-  max-width: 400px; /* Adjusted size for better fitting */
+  width: 100%;
+  max-width: 400px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -93,5 +100,56 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-text {
+    font-size: 1.1rem;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+
+  .contact-image {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.3rem;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+  }
+
+  .contact-svg {
+    max-width: 250px;
   }
 }

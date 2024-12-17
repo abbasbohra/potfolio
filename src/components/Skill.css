@@ -1,10 +1,37 @@
+/* Skill Container */
 .skill {
   margin: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.skill h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Progress Bar Container */
 .progress-bar {
-  height: 10px;
+  height: 12px;
   background-color: #4caf50;
-  border-radius: 5px;
+  border-radius: 6px;
   width: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add an inner shadow or gradient for better look */
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #6ac47e, #4caf50);
+  border-radius: 6px;
+  opacity: 0.5;
 }

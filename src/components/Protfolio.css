@@ -1,37 +1,35 @@
 /* Portfolio Section Styles */
 #portfolio {
-  background: linear-gradient(
-    135deg,
-    #89a8b2,
-    #b3c8cf,
-    #e5e1da,
-    #f1f0e8
-  ); /* Replace with your choice */
-  padding: 2rem;
-  color: white;
+  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+  padding: 3rem 1.5rem;
+  color: #333;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-title {
   font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
 }
 
+/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
 }
 
+/* Project Card */
 .project-card {
-  background: white;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
+  text-align: center;
 }
 
 .project-card:hover {
@@ -40,23 +38,24 @@
 }
 
 .project-image {
-  width: 10%;
-  height: 15%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  display: block;
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  margin: 0.5rem 0;
-  color: #222;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
 }
 
 .project-description {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .project-link {
@@ -75,11 +74,8 @@
 .project-link svg {
   margin-left: 0.5rem;
 }
-#portfolio {
-  position: relative;
-  overflow: hidden;
-}
 
+/* Background Styling */
 #portfolio::before {
   content: "";
   position: absolute;
@@ -87,7 +83,7 @@
   left: -50px;
   width: 400px;
   height: 300px;
-  background: url("../images//mobile.svg") no-repeat center;
+  background: url("../images/mobile.svg") no-repeat center;
   opacity: 0.2;
   z-index: -1;
 }

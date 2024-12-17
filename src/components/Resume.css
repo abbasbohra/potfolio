@@ -1,67 +1,121 @@
-/* Add the gradient background to the resume container */
+/* Resume Container */
 .resume-container {
   background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
-  padding: 20px;
+  padding: 2rem;
   border-radius: 10px;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styles */
+/* Header */
 .header {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.381);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-/* Content styles */
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Content Layout */
 .content {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
-/* Left column */
+/* Left Column */
 .left-column {
   flex: 0.5;
-  background-color: rgba(255, 255, 255, 0.448);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Right column */
+.left-column h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.left-column p,
+.left-column li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Right Column */
 .right-column {
   flex: 2;
-  background-color: rgba(255, 255, 255, 0.244);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Section title */
-.section h2 {
+.right-column h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
-/* General list styles */
-ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-ul li {
-  margin-bottom: 8px;
+.right-column p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 .experience h3 {
+  font-size: 1.2rem;
+  color: #222;
   margin: 0;
-  font-size: 1.2em;
-  color: #444;
 }
 
 .experience p {
   margin: 5px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.experience ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.experience ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* General List Styles */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
 }

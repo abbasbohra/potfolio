@@ -5,6 +5,7 @@
   text-align: center;
   padding: 15px 10px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .footer-text {
@@ -15,4 +16,22 @@
 
 .footer-text strong {
   color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 5px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 0.75rem;
+  }
 }

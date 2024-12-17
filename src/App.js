@@ -8,8 +8,6 @@ import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div>
       <Header />

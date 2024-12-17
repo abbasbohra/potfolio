@@ -2,11 +2,12 @@
 .header-container {
   background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
   color: #333;
-  padding: 20px 40px;
+  padding: 15px 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 /* Flexbox for header content */
@@ -23,6 +24,7 @@
   font-weight: 700;
   color: #4d4d4d;
   margin: 0;
+  white-space: nowrap;
 }
 
 /* Navigation styling */
@@ -64,14 +66,32 @@
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 10px;
   }
 
   .header-nav {
     margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   .social-icons {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 1.3rem;
   }
 }
