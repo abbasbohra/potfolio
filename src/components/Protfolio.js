@@ -1,9 +1,8 @@
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { ReactComponent as CartIcon } from "../images/cart-shopping-solid.svg";
 import { ReactComponent as BuildingIcon } from "../images/building-regular.svg";
 import { ReactComponent as ProjectIcon } from "../images/cart-shopping-solid.svg";
-import "./Protfolio.css";
+import "./CssFile/Protfolio.css";
 
 const projects = [
   {

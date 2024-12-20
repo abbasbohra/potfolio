@@ -1,6 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import "./Header.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import "./CssFile/Header.css";
 
 const Header = () => (
   <header className="header-container">
@@ -22,7 +22,7 @@ const Header = () => (
       </nav>
       <div className="social-icons">
         <a
-          href="https://github.com/yourprofile"
+          href="https://github.com/abbasbohra"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
@@ -30,20 +30,12 @@ const Header = () => (
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://linkedin.com/in/abbasbohra50"
           target="_blank"
           rel="noopener noreferrer"
           className="social-icon"
         >
           <FaLinkedin />
-        </a>
-        <a
-          href="https://twitter.com/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-icon"
-        >
-          <FaTwitter />
         </a>
       </div>
     </div>

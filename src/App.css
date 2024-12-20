@@ -13,7 +13,7 @@
 /* Animation Preference for Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .App-logo {
-    animation: none;
+    animation: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
 
