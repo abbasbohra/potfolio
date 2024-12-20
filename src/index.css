@@ -103,7 +103,12 @@ body {
   overflow-x: hidden; /* Remove horizontal scroll */
   width: 100%; /* Ensure full width without overflow */
 }
-
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: auto; /* Allow horizontal scroll on mobile */
+  }
+}
 /* Images and Other Media */
 img,
 video {
