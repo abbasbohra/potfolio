@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./CssFile/Header.css";
 
@@ -7,18 +8,19 @@ const Header = () => (
     <div className="header-content">
       <h1 className="header-title">Abbas Bohra</h1>
       <nav className="header-nav">
-        <a href="#about" className="nav-link">
+        {/* Use Link for navigation */}
+        <Link to="/About" className="nav-link">
           About
-        </a>
-        <a href="#portfolio" className="nav-link">
+        </Link>
+        <Link to="/portfolio" className="nav-link">
           Portfolio
-        </a>
-        <a href="#resume" className="nav-link">
+        </Link>
+        <Link to="/resume" className="nav-link">
           Resume
-        </a>
-        <a href="#contact" className="nav-link">
+        </Link>
+        <Link to="/contact" className="nav-link">
           Contact
-        </a>
+        </Link>
       </nav>
       <div className="social-icons">
         <a
