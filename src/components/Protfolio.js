@@ -9,7 +9,8 @@ const projects = [
   {
     id: 1,
     title: "E-Commerce App",
-    description: "A cross-platform app built with React Native.",
+    description:
+      "A cross-platform mobile application built with React Native, enabling users to browse, shop, and manage their purchases seamlessly.",
     image: CartIcon,
     link: "https://github.com/your-repo",
     navigation: "/project/e-commerce",
@@ -17,7 +18,8 @@ const projects = [
   {
     id: 2,
     title: "Hotel Booking Platform",
-    description: "A modern web application for hotel reservations.",
+    description:
+      "A modern web application designed for users to search, book, and manage hotel reservations with an intuitive and responsive interface.",
     image: BuildingIcon,
     link: "https://github.com/your-repo",
     navigation: "/project/hotel-booking",
@@ -25,10 +27,29 @@ const projects = [
   {
     id: 3,
     title: "Jain Supplier",
-    description: "A portfolio showcasing my skills and projects.",
+    description:
+      "A web-based platform for suppliers to manage inventory, process orders, and track deliveries efficiently.",
     image: ProjectIcon,
     link: "https://your-website.com",
     navigation: "/project/jain-supplier",
+  },
+  {
+    id: 4, // Fixed duplicate ID
+    title: "Royal Motors",
+    description:
+      "A staff-oriented mobile app for tracking sales, managing daily operations, and maintaining detailed login/logout reports.",
+    image: ProjectIcon,
+    link: "https://your-website.com",
+    navigation: "/project/royal-motors",
+  },
+  {
+    id: 5, // Fixed duplicate ID and typo in title
+    title: "Mehta Insurance",
+    description:
+      "A comprehensive app for users to apply for car and health insurance, file claims, track statuses, and submit verification documents.",
+    image: ProjectIcon,
+    link: "https://your-website.com",
+    navigation: "/project/mehta-insurance", // Fixed typo in navigation
   },
 ];
 

@@ -37,9 +37,11 @@ const Resume = () => {
               <li>React Native</li>
               <li>Redux</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>Firebase Cloud Platform</li>
               <li>React Hooks</li>
               <li>React Web</li>
+              <li>OTA Update</li>
             </ul>
           </div>
 
@@ -89,6 +91,14 @@ const Resume = () => {
                 <li>
                   Conducted testing and debugging to ensure app performance and
                   reliability.
+                </li>
+                <li>
+                  Implemented smooth and responsive UI components to enhance
+                  user experience.
+                </li>
+                <li>
+                  Developed custom functions to handle complex state management
+                  and improve code reusability.
                 </li>
               </ul>
             </div>

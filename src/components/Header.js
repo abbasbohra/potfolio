@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Changed from Link to NavLink
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./CssFile/Header.css";
 
@@ -8,19 +8,31 @@ const Header = () => (
     <div className="header-content">
       <h1 className="header-title">Abbas Bohra</h1>
       <nav className="header-nav">
-        {/* Use Link for navigation */}
-        <Link to="/About" className="nav-link">
+        {/* Use NavLink for navigation with active class */}
+        <NavLink
+          to="/About"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           About
-        </Link>
-        <Link to="/portfolio" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/portfolio"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           Portfolio
-        </Link>
-        <Link to="/resume" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/resume"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           Resume
-        </Link>
-        <Link to="/contact" className="nav-link">
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+        >
           Contact
-        </Link>
+        </NavLink>
       </nav>
       <div className="social-icons">
         <a

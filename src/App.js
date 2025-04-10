@@ -14,6 +14,8 @@ import Footer from "./components/Footer";
 import ECommerceAppDetail from "./components/EcommerceAppDetail";
 import HotelBookingAppDetail from "./components/HotelBookingAppDetail";
 import JainSupplierDetail from "./components/JainSupplierDetail";
+import RoyalMotors from "./components/RoyalMotorsDetail";
+import InsuranceAppDetail from "./components/MehtaInsuranceDetail";
 
 function App() {
   return (
@@ -35,6 +37,11 @@ function App() {
           <Route
             path="/project/jain-supplier"
             element={<JainSupplierDetail />}
+          />
+          <Route path="/project/royal-motors" element={<RoyalMotors />} />
+          <Route
+            path="/project/meheta-insurance"
+            element={<InsuranceAppDetail />}
           />
           {/* Detail Route */}
         </Routes>

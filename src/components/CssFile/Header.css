@@ -39,10 +39,40 @@
   color: #4d4d4d;
   text-decoration: none;
   transition: color 0.3s ease;
+  position: relative; /* Added for underline positioning */
+  padding-bottom: 4px; /* Added space for underline */
 }
 
 .nav-link:hover {
   color: #333;
+}
+
+/* Active tab styling */
+.nav-link.active {
+  color: #333;
+  font-weight: 600; /* Optional: makes active tab slightly bolder */
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  bottom: 0;
+  left: 0;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect maintains underline for active tab */
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  bottom: 0;
+  left: 0;
 }
 
 /* Social Icons styling */
@@ -93,5 +123,13 @@
 
   .social-icon {
     font-size: 1.3rem;
+  }
+
+  .nav-link.active::after {
+    height: 1.5px; /* Slightly thinner underline for smaller screens */
+  }
+
+  .nav-link:hover::after {
+    height: 1.5px;
   }
 }

@@ -10,11 +10,11 @@ const HotelBookingAppDetail = () => (
       <b>Agents</b> and <b>Reservation Users</b>. The app offers a seamless
       experience with tailored functionalities based on user roles.
     </p>
-    <h2>Key Features</h2>
-    <ul>
+    <h2 className="section-title">Key Features</h2>
+    <ul className="feature-list">
       <li>
         <b>User Roles:</b>
-        <ul>
+        <ul className="sub-list">
           <li>
             <b>Agent:</b> Can search hotels, add rooms to the booking list, and
             complete the booking after payment through the integrated payment
@@ -36,7 +36,7 @@ const HotelBookingAppDetail = () => (
       </li>
       <li>
         <b>Checkout and Payment:</b>
-        <ul>
+        <ul className="sub-list">
           <li>
             Integrated <b>WebView</b> for payment processing ensures a secure
             and smooth transaction experience for agents.
@@ -55,8 +55,8 @@ const HotelBookingAppDetail = () => (
         booking confirmations, payment status, and special offers.
       </li>
     </ul>
-    <h2>Technologies Used</h2>
-    <ul>
+    <h2 className="section-title">Technologies Used</h2>
+    <ul className="tech-list">
       <li>
         <b>React Native:</b> for cross-platform mobile development.
       </li>
@@ -74,7 +74,7 @@ const HotelBookingAppDetail = () => (
         availability, booking logic, and user management.
       </li>
     </ul>
-    <p>
+    <p className="conclusion">
       This app demonstrates expertise in designing and implementing multi-user
       systems, secure payment integrations, and intuitive user interfaces
       tailored for diverse booking needs.
