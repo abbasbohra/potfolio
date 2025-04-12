@@ -5,6 +5,7 @@
   color: #333;
   position: relative;
   overflow: hidden;
+  height: 80vh;
 }
 
 .portfolio-title {
@@ -82,7 +83,7 @@
   top: -50px;
   left: -50px;
   width: 300px; /* Reduced from 400px */
-  height: 200px; /* Reduced from 300px */
+  height: 200; /* Reduced from 300px */
   background: url("../../images/mobile.svg") no-repeat center;
   opacity: 0.2;
   z-index: -1;

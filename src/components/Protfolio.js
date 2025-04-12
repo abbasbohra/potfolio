@@ -49,7 +49,7 @@ const projects = [
       "A comprehensive app for users to apply for car and health insurance, file claims, track statuses, and submit verification documents.",
     image: ProjectIcon,
     link: "https://your-website.com",
-    navigation: "/project/mehta-insurance", // Fixed typo in navigation
+    navigation: "/project/meheta-insurance", // Fixed typo in navigation
   },
 ];
 

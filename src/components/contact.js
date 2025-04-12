@@ -83,6 +83,7 @@ const Contact = () => {
                 marginHeight="0"
                 marginWidth="0"
                 title="Enquiry Form"
+                loading="eager"
                 className="contact-iframe"
               >
                 Loading…
