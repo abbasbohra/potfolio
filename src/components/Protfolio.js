@@ -60,14 +60,14 @@ const Portfolio = () => {
       <div className="projects-grid">
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
-            {/* Render SVG Component */}
-            <project.image className="project-image" />
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            {/* Add Link to Detail Page */}
-            <Link to={project.navigation} className="project-link">
-              View Details
-            </Link>
+            <div className="project-card-content">
+              <project.image className="project-image" />
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <Link to={project.navigation} className="project-link">
+                View Details
+              </Link>
+            </div>
           </div>
         ))}
       </div>
