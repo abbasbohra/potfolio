@@ -1,10 +1,27 @@
+/* Design Tokens */
+:root {
+  --bg-gradient: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+  --text-900: #1f2937;
+  --text-700: #374151;
+  --text-600: #4b5563;
+  --text-500: #6b7280;
+  --brand-500: #2c3e50;
+  --brand-400: #3498db;
+  --surface: #ffffff;
+  --radius: 10px;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 6px 14px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.14);
+  --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
 /* Global Styles */
 body {
-  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+  background: var(--bg-gradient);
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: var(--text-700);
 }
 
 html {
@@ -20,14 +37,13 @@ header {
 }
 
 nav a {
-  color: #fff;
+  color: inherit;
   margin: 0 1rem;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 200ms var(--ease-standard);
 }
-
 nav a:hover {
-  color: #b3c8cf;
+  color: var(--brand-400);
 }
 
 /* Section Styles */
@@ -45,17 +61,17 @@ section {
 }
 
 .project {
-  border: 1px solid #ccc;
+  border: 1px solid #e5e7eb;
   padding: 1rem;
   width: 200px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform 200ms var(--ease-standard),
+    box-shadow 200ms var(--ease-standard);
 }
-
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 /* Dark Mode Styles */
@@ -77,16 +93,17 @@ section {
   top: 20px;
   right: 20px;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: var(--brand-500);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 200ms var(--ease-standard),
+    transform 200ms var(--ease-standard);
 }
 
 .dark-mode-toggle:hover {
-  background-color: #555;
+  transform: translateY(-1px);
 }
 /* Global Reset */
 *,

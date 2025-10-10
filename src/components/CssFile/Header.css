@@ -8,6 +8,20 @@
   top: 0;
   z-index: 1000;
   width: 100%;
+  transform: translateY(-8px);
+  opacity: 0;
+  animation: headerDrop 500ms ease forwards;
+}
+
+@keyframes headerDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Flexbox for header content */
@@ -38,13 +52,14 @@
   font-size: 1rem;
   color: #4d4d4d;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 200ms ease, transform 200ms ease;
   position: relative; /* Added for underline positioning */
   padding-bottom: 4px; /* Added space for underline */
 }
 
 .nav-link:hover {
   color: #333;
+  transform: translateY(-1px);
 }
 
 /* Active tab styling */
@@ -84,7 +99,7 @@
 .social-icon {
   font-size: 1.5rem;
   color: #4d4d4d;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 200ms ease, color 200ms ease;
 }
 
 .social-icon:hover {
