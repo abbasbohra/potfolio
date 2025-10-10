@@ -61,12 +61,12 @@ const Contact = () => {
               Send an Enquiry
             </button>
           </div>
-          {/* Right Section (Image with animation) */}npm start
+          {/* Right Section (Image with animation) */}
           <div className="contact-image">
             <ContactIcon className="contact-svg" />
           </div>
         </div>
-        {/* Modal for Google Form */}npm start
+        {/* Modal for Google Form */}
         {isModalOpen && (
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
