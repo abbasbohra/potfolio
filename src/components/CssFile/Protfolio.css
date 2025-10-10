@@ -32,15 +32,10 @@
 
 /* Projects Grid */
 .projects-grid {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
   padding: 0.5rem;
-  padding-bottom: 1rem;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
 /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
@@ -51,7 +46,7 @@
 /* Project Card */
 .project-card {
   flex: 0 0 auto;
-  width: 300px;
+  width: auto;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   border-radius: 10px;
@@ -120,20 +115,51 @@
   flex-grow: 1;
 }
 
-.project-link {
-  display: inline-flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-top: auto; /* Keep at bottom */
-  width: 100%; /* Ensure it spans container for centering */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 0.75rem;
 }
 
-.project-link:hover {
-  text-decoration: underline;
+.project-tag {
+  background: #eef3f6;
+  color: #2c3e50;
+  border: 1px solid #d7e1e7;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  color: #2c3e50;
+  background: #ffffff;
+  text-decoration: none;
+  transition: box-shadow 200ms ease, transform 200ms ease,
+    background-color 200ms ease, color 200ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background: #2c3e50;
+  color: #ffffff;
+  border-color: #2c3e50;
 }
 
 .project-link svg {

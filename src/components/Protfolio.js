@@ -14,6 +14,7 @@ const projects = [
     image: CartIcon,
     link: "https://github.com/your-repo",
     navigation: "/project/e-commerce",
+    tags: ["React Native", "Redux", "REST API"],
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const projects = [
     image: BuildingIcon,
     link: "https://github.com/your-repo",
     navigation: "/project/hotel-booking",
+    tags: ["React", "Node.js", "MongoDB"],
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const projects = [
     image: ProjectIcon,
     link: "https://your-website.com",
     navigation: "/project/jain-supplier",
+    tags: ["React", "Firebase", "Charts"],
   },
   {
     id: 4, // Fixed duplicate ID
@@ -41,6 +44,7 @@ const projects = [
     image: ProjectIcon,
     link: "https://your-website.com",
     navigation: "/project/royal-motors",
+    tags: ["React Native", "TypeScript", "Analytics"],
   },
   {
     id: 5, // Fixed duplicate ID and typo in title
@@ -50,25 +54,47 @@ const projects = [
     image: ProjectIcon,
     link: "https://your-website.com",
     navigation: "/project/meheta-insurance", // Fixed typo in navigation
+    tags: ["React Native", "Forms", "Notifications"],
   },
 ];
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h2 className="portfolio-title">My Projects</h2>
-      <div className="projects-grid">
+      <h2 className="portfolio-title">Featured Projects</h2>
+      <div className="projects-grid grid-responsive">
         {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <div className="project-card-content">
+          <article className="project-card" key={project.id}>
+            <header className="project-header">
               <project.image className="project-image" />
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-              <Link to={project.navigation} className="project-link">
-                View Details
+            </header>
+            <p className="project-description">{project.description}</p>
+            {project.tags && (
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="project-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+            <div className="project-actions">
+              <Link to={project.navigation} className="btn btn-primary">
+                Details
               </Link>
+              {project.link && (
+                <a
+                  className="btn"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit
+                </a>
+              )}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

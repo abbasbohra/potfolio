@@ -11,6 +11,7 @@ const services = [
       "Component-driven UI with reusable patterns",
       "Accessibility and performance best practices",
     ],
+    icon: "🌐",
   },
   {
     title: "Mobile App Development",
@@ -21,6 +22,7 @@ const services = [
       "OTA updates and CI-ready builds",
       "Native modules and device integrations",
     ],
+    icon: "📱",
   },
   {
     title: "SEO & Performance",
@@ -31,6 +33,7 @@ const services = [
       "Image optimization and code splitting",
       "Lighthouse audits and fixes",
     ],
+    icon: "🚀",
   },
   {
     title: "Backend & APIs",
@@ -41,6 +44,7 @@ const services = [
       "Auth flows and data validation",
       "Cloud functions and Firebase backend",
     ],
+    icon: "🔗",
   },
 ];
 
@@ -58,6 +62,9 @@ const Services = () => {
       <div className="services-grid">
         {services.map((service) => (
           <div key={service.title} className="service-card">
+            <div className="service-icon" aria-hidden>
+              {service.icon}
+            </div>
             <h3 className="service-title">{service.title}</h3>
             <p className="service-description">{service.description}</p>
             <ul className="service-points">
@@ -65,6 +72,14 @@ const Services = () => {
                 <li key={p}>{p}</li>
               ))}
             </ul>
+            <div className="service-actions">
+              <a className="btn btn-primary" href="#contact">
+                Get a quote
+              </a>
+              <a className="btn" href="#portfolio">
+                See work
+              </a>
+            </div>
           </div>
         ))}
       </div>
