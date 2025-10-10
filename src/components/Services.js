@@ -11,7 +11,6 @@ const services = [
       "Component-driven UI with reusable patterns",
       "Accessibility and performance best practices",
     ],
-    icon: "🌐",
   },
   {
     title: "Mobile App Development",
@@ -22,7 +21,6 @@ const services = [
       "OTA updates and CI-ready builds",
       "Native modules and device integrations",
     ],
-    icon: "📱",
   },
   {
     title: "SEO & Performance",
@@ -33,7 +31,6 @@ const services = [
       "Image optimization and code splitting",
       "Lighthouse audits and fixes",
     ],
-    icon: "🚀",
   },
   {
     title: "Backend & APIs",
@@ -44,7 +41,6 @@ const services = [
       "Auth flows and data validation",
       "Cloud functions and Firebase backend",
     ],
-    icon: "🔗",
   },
 ];
 

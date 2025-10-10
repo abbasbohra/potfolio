@@ -5,13 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// Initialize theme from localStorage
-try {
-  const saved = localStorage.getItem("theme");
-  if (saved) {
-    document.documentElement.setAttribute("data-theme", saved);
-  }
-} catch {}
 root.render(
   <React.StrictMode>
     <App />

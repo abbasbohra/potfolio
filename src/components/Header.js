@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./CssFile/Header.css";
 
 const Header = () => (
-  <header className="header-container" data-role="app-header">
+  <header className="header-container">
     <div className="header-content">
       <h1 className="header-title">Abbas Bohra</h1>
       <nav className="header-nav">
@@ -58,20 +58,6 @@ const Header = () => (
           <FaLinkedin />
         </a>
       </div>
-      <button
-        className="theme-toggle"
-        aria-label="Toggle theme"
-        onClick={() => {
-          const root = document.documentElement;
-          const isDark = root.getAttribute("data-theme") === "dark";
-          root.setAttribute("data-theme", isDark ? "light" : "dark");
-          try {
-            localStorage.setItem("theme", isDark ? "light" : "dark");
-          } catch {}
-        }}
-      >
-        Theme
-      </button>
     </div>
   </header>
 );
