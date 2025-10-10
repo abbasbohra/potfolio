@@ -10,6 +10,7 @@ import About from "./components/About";
 import Portfolio from "./components/Protfolio";
 import Contact from "./components/contact";
 import Resume from "./components/Resume";
+import Services from "./components/Services";
 import Footer from "./components/Footer";
 import ECommerceAppDetail from "./components/EcommerceAppDetail";
 import HotelBookingAppDetail from "./components/HotelBookingAppDetail";
@@ -27,6 +28,7 @@ function App() {
           {/* Default Route */}
           <Route path="/About" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/project/e-commerce" element={<ECommerceAppDetail />} />

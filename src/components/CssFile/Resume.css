@@ -7,6 +7,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Header */
 .header {
   text-align: center;
@@ -15,6 +27,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 500ms ease forwards;
 }
 
 .header h1 {
@@ -30,6 +44,56 @@
   margin-top: 8px;
 }
 
+.header .meta {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #555;
+}
+
+.header .meta a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.header .meta a:hover {
+  text-decoration: underline;
+}
+
+.header-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  color: #2c3e50;
+  background: #ffffff;
+  text-decoration: none;
+  transition: box-shadow 200ms ease, transform 200ms ease,
+    background-color 200ms ease, color 200ms ease;
+  will-change: transform, box-shadow;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+  background: #2c3e50;
+  color: #ffffff;
+  border-color: #2c3e50;
+}
+
 /* Content Layout */
 .content {
   display: flex;
@@ -43,6 +107,8 @@
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 600ms ease 120ms forwards;
 }
 
 .left-column h2 {
@@ -59,6 +125,21 @@
   margin-bottom: 0.5rem;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eef3f6;
+  color: #2c3e50;
+  border: 1px solid #d7e1e7;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
 /* Right Column */
 .right-column {
   flex: 2;
@@ -66,6 +147,8 @@
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 600ms ease 220ms forwards;
 }
 
 .right-column h2 {
@@ -101,6 +184,19 @@
 .experience ul li {
   margin-bottom: 8px;
   color: #444;
+  transition: color 200ms ease;
+}
+
+.exp-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.exp-meta {
+  color: #555;
+  font-size: 0.95rem;
 }
 
 /* General List Styles */
@@ -117,5 +213,11 @@ ul {
 
   .header h1 {
     font-size: 1.8rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 }

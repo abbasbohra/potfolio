@@ -1,0 +1,101 @@
+.services-section {
+  background: linear-gradient(135deg, #89a8b2, #b3c8cf, #e5e1da, #f1f0e8);
+  padding: 2rem 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-hero {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 500ms ease forwards;
+}
+
+.services-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 0.25rem 0;
+}
+
+.services-subtitle {
+  font-size: 1.05rem;
+  color: #4a4a4a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  animation: fadeInUp 600ms ease forwards;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 80ms;
+}
+.service-card:nth-child(2) {
+  animation-delay: 140ms;
+}
+.service-card:nth-child(3) {
+  animation-delay: 200ms;
+}
+.service-card:nth-child(4) {
+  animation-delay: 260ms;
+}
+.service-card:nth-child(5) {
+  animation-delay: 320ms;
+}
+.service-card:nth-child(6) {
+  animation-delay: 380ms;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+}
+
+.service-description {
+  color: #555;
+  margin: 0 0 0.5rem 0;
+}
+
+.service-points {
+  padding-left: 1.25rem;
+  color: #444;
+}
+
+.service-points li {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 1.8rem;
+  }
+}

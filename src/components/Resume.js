@@ -4,48 +4,63 @@ import "./CssFile/Resume.css";
 const Resume = () => {
   return (
     <div id="resume" className="resume-container">
-      {/* Header Section */}
       <div className="header">
         <h1>ABBAS BOHRA</h1>
         <p>React Native Developer</p>
+        <div className="meta">
+          <span>Chhoti Sadri, Rajasthan</span>
+          <span>•</span>
+          <a href="mailto:abbasbohra319@gmail.com">abbasbohra319@gmail.com</a>
+          <span>•</span>
+          <a href="tel:+919890729219">+91 98907 29219</a>
+        </div>
+        <div className="header-actions">
+          <a className="btn btn-primary" href="#contact">
+            Contact
+          </a>
+          <a
+            className="btn"
+            href="https://linkedin.com/in/abbasbohra50"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            className="btn"
+            href="https://github.com/abbasbohra"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
 
-      {/* Main Content Section */}
       <div className="content">
-        {/* Left Column */}
         <div className="left-column">
-          {/* Contact */}
           <div className="section">
-            <h2>Contact</h2>
-            <p>📞 +919890729219</p>
-            <p>✉️ abbasbohra319@gmail.com</p>
-            <p>📍 Chhoti Sadri, Rajasthan, 312604</p>
+            <h2>Core Skills</h2>
+            <div className="tags">
+              <span className="tag">React Native</span>
+              <span className="tag">React</span>
+              <span className="tag">Redux</span>
+              <span className="tag">TypeScript</span>
+              <span className="tag">JavaScript</span>
+              <span className="tag">Firebase</span>
+              <span className="tag">REST APIs</span>
+              <span className="tag">OTA Updates</span>
+            </div>
           </div>
 
-          {/* Education */}
           <div className="section">
             <h2>Education</h2>
-            <p>2021 - 2024</p>
-            <p>MLSU Udaipur</p>
-            <p>Bachelor of Commerce</p>
+            <p>
+              <strong>MLSU Udaipur</strong>
+            </p>
+            <p>Bachelor of Commerce (2021 – 2024)</p>
           </div>
 
-          {/* Skills */}
-          <div className="section">
-            <h2>Skills</h2>
-            <ul>
-              <li>React Native</li>
-              <li>Redux</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Firebase Cloud Platform</li>
-              <li>React Hooks</li>
-              <li>React Web</li>
-              <li>OTA Update</li>
-            </ul>
-          </div>
-
-          {/* Languages */}
           <div className="section">
             <h2>Languages</h2>
             <ul>
@@ -56,67 +71,65 @@ const Resume = () => {
           </div>
         </div>
 
-        {/* Right Column */}
         <div className="right-column">
-          {/* Profile Summary */}
           <div className="section">
-            <h2>Profile Summary</h2>
+            <h2>Profile</h2>
             <p>
-              A highly skilled and experienced React Native Developer with
-              experience designing and developing mobile applications for iOS
-              and Android platforms. Proficient in creating custom mobile
-              applications with advanced features using React Native, Redux, and
-              other relevant technologies. Strong ability to work independently
-              and in collaborative environments to deliver high-quality
-              products.
+              React Native developer focused on building performant,
+              maintainable mobile apps and modern web interfaces. I care about
+              clean architecture, consistent UI patterns, and measurable
+              outcomes.
             </p>
           </div>
 
-          {/* Work Experience */}
           <div className="section">
-            <h2>Work Experience</h2>
+            <h2>Experience</h2>
             <div className="experience">
-              <h3>PHP Poets Pvt Ltd</h3>
-              <p>Junior React Native Developer</p>
-              <p>AUG 2023 - Present</p>
+              <div className="exp-header">
+                <h3>PHP Poets Pvt Ltd</h3>
+                <span className="exp-meta">
+                  Junior React Native Developer • Aug 2023 – Present
+                </span>
+              </div>
               <ul>
                 <li>
-                  Designed and developed mobile and web applications using React
-                  Native, Redux, and related technologies.
+                  Delivered cross‑platform features with React Native and Redux,
+                  reducing duplicate code and improving release cadence.
                 </li>
                 <li>
-                  Integrated RESTful APIs for efficient communication between
-                  frontend and backend systems.
+                  Integrated REST APIs and improved error handling, decreasing
+                  crash reports and support tickets.
                 </li>
                 <li>
-                  Conducted testing and debugging to ensure app performance and
-                  reliability.
+                  Optimized rendering and bundle size using memoization and
+                  code‑splitting, improving app responsiveness.
                 </li>
                 <li>
-                  Implemented smooth and responsive UI components to enhance
-                  user experience.
-                </li>
-                <li>
-                  Developed custom functions to handle complex state management
-                  and improve code reusability.
+                  Collaborated with designers to implement consistent theming
+                  and accessible UI components.
                 </li>
               </ul>
             </div>
+
             <div className="experience">
-              <h3>Websenor</h3>
-              <p>React Native Intern</p>
-              <p>JAN 2023 - JUL 2023</p>
+              <div className="exp-header">
+                <h3>Websenor</h3>
+                <span className="exp-meta">
+                  React Native Intern • Jan 2023 – Jul 2023
+                </span>
+              </div>
               <ul>
                 <li>
-                  Assisted in developing and maintaining mobile applications
-                  using React Native.
+                  Contributed to feature development and bug fixes in React
+                  Native apps.
                 </li>
                 <li>
-                  Integrated RESTful APIs and resolved performance issues.
+                  Implemented API integrations and addressed performance
+                  bottlenecks.
                 </li>
                 <li>
-                  Gained hands-on experience in Redux and debugging
-                  methodologies.
+                  Strengthened fundamentals in Redux, debugging, and testing
+                  flows.
                 </li>
               </ul>
             </div>
