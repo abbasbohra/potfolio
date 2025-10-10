@@ -15,6 +15,21 @@
   --ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
+/* Dark Theme Tokens */
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(135deg, #0f172a, #111827, #0b1220, #0a0f1a);
+  --text-900: #f3f4f6;
+  --text-700: #e5e7eb;
+  --text-600: #d1d5db;
+  --text-500: #9ca3af;
+  --brand-500: #60a5fa;
+  --brand-400: #93c5fd;
+  --surface: rgba(17, 24, 39, 0.6);
+  --shadow-sm: 0 6px 10px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
 /* Global Styles */
 body {
   background: var(--bg-gradient);

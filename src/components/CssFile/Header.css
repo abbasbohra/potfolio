@@ -31,6 +31,23 @@
   justify-content: space-between;
 }
 
+.theme-toggle {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease,
+    background-color 200ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
 /* Title styling */
 .header-title {
   font-family: "Poppins", sans-serif;
