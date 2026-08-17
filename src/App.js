@@ -38,11 +38,13 @@ function App() {
     setFormStatus("sending");
     try {
       const apiBaseUrl = process.env.REACT_APP_API_URL || "";
-      const response = await fetch(`${apiBaseUrl}/api/contact`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const response =
+
+        await fetch(`${apiBaseUrl}/.netlify/functions/contact`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(form),
+        });
       if (!response.ok) throw new Error("Unable to send message");
       setForm({ name: "", email: "", message: "" });
       setFormStatus("success");
